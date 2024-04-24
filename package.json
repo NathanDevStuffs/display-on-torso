@@ -1,0 +1,12 @@
+{
+  "name": "torso-display-ad",
+  "version": "1.0.0",
+  "description": "A simple server for data sharing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Nathan",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17
