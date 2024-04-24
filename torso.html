@@ -1,0 +1,13 @@
+<!-- display.html -->
+<textarea id="output" readonly></textarea>
+
+<script>
+  async function fetchData() {
+    const response = await fetch('/get');
+    const data = await response.json();
+    document.getElementById('output').value = data.data;
+  }
+
+  // Fetch shared data when the page loads
+  fetchData();
+</script>
