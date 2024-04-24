@@ -1,0 +1,15 @@
+<!-- index.html -->
+<textarea id="input"></textarea>
+<button onclick="saveData()">send to torso</button>
+
+<script>
+  async function saveData() {
+    const userInput = document.getElementById('input').value;
+    await fetch('/save', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ data: userInput }),
+    });
+    alert('Data saved successfully!');
+  }
+</script>
